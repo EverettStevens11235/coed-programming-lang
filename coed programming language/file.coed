@@ -1,5 +1,3 @@
-create~main: as class
-	create~init: as function
-		open as showtext 'hey'
-	end
+create~main: as function
+	open as showtext 'Hello World!'
 end
