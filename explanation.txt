@@ -1,0 +1,21 @@
+Coed is a programming language that resembles english in many ways.
+
+It is interpertation based, but before running the interperator script,
+you need to make sure these things are true.
+
+1. The interperator script MUST be in the same directory.
+2. Coed files can NOT import other files or libraries.
+3. Coed files can NOT have spaces in their names, 
+	or else the interperator will not run properly
+4. The script MUST start with 'create~whatever: as* function' or it wont work.
+	Tabs are optional.
+
+LIST OF RESERVED KEYWORDS
+
+open, showtext, post, get, function, create, msgbox, mknum, rmnum, as*
+
+LIST OF RESERVED CHARACTERS
+
+', (, ), -, :, =, /
+
+*for readibility
