@@ -139,10 +139,6 @@ def lexer(text):
 			elif tok == "msgbox":
 				tokens.append("MSGBOX")
 				tok=""
-			elif tok == "class":
-				tokens.append(f"CLASS: {fname}")
-				fname = ""
-				tok = ""
 			else:
 				# if its a character/group of characters out of syntax
 				if inString:
@@ -169,7 +165,7 @@ def parser(tokens):
 		global variables
 		if tokens[0] == "CREATE":
 			#print("space")
-			if tokens[1][0:5] == "CLASS" and tokens[len(tokens) - 1] == "END":
+			if tokens[1][0:8] == "FUNCTION" and tokens[len(tokens) - 1] == "END":
 				#print(tokens[len(tokens) - 1])
 				i = 2
 				while i < len(tokens) - 1:
