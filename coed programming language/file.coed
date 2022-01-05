@@ -1,0 +1,8 @@
+create~script: as function
+	/ define variables /
+	post(text)='Hello world!'
+	/ output string /
+	get(text):
+	/ debug /
+	open as showtext 'Got past print text'
+end
